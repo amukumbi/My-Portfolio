@@ -122,9 +122,9 @@ h1, h2, h3 {
 /* === Home Section === */
 .home {
   padding: 100px 0;
-  width:100%;
+  width: 100%;
   margin-top: 80px;
-  background: linear-gradient(135deg, #1e1e2f, #2a2a40); /* Gradient background for contrast */
+  background: linear-gradient(135deg, #1e1e2f, #2a2a40);
 }
 
 .home-content {
@@ -211,8 +211,6 @@ h1, h2, h3 {
   box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
 }
 
-
-
 /* Title */
 .section-title {
   font-size: 2.5rem;
@@ -231,6 +229,8 @@ h1, h2, h3 {
   font-family: 'Courier New', monospace;
   font-size: 1.25rem;
   font-weight: 600;
+  max-width: 100%;
+  overflow: hidden;
   gap: 0.5rem;
   margin-bottom: 30px;
   animation: fadeIn 2s ease-in-out;
@@ -240,12 +240,14 @@ h1, h2, h3 {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
 @media (max-width: 768px) {
-  
   .home-content {
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    flex-wrap: wrap;
   }
 
   .home-text {
@@ -254,6 +256,11 @@ h1, h2, h3 {
 
   .typewriter {
     font-size: 2rem;
+    width: 100%;
+    max-width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    animation: none;
   }
 
   .subtitle {
@@ -265,7 +272,7 @@ h1, h2, h3 {
   }
 
   .home-image img {
-    width: 250px;
+    max-width: 100%;
     height: auto;
   }
 }
