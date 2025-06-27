@@ -240,6 +240,35 @@ h1, h2, h3 {
   from { opacity: 0; transform: translateY(10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+@media (max-width: 768px) {
+  
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .home-text {
+    min-width: 100%;
+  }
+
+  .typewriter {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .home-text p {
+    font-size: 1rem;
+  }
+
+  .home-image img {
+    width: 250px;
+    height: auto;
+  }
+}
 
 /* Main About Section Background */
 .about {
